@@ -1,0 +1,87 @@
+.contenedor_detail {
+  display: grid;
+}
+
+.contenedor_detail .imagenes {
+  width: 67%;
+}
+
+.contenedor_detail .imagenes img {
+  width: 100%;
+  display: block;
+}
+
+/*Items*/
+.contenedor_detail .items {
+  position: absolute;
+  position: fixed ;
+  background-color: black;
+  overflow: auto;
+  color: white;
+  padding: 35px;
+  width: 33%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+.contenedor_detail .items nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+}
+.contenedor_detail .items nav .left {
+  padding: 0px;
+}
+.contenedor_detail .items nav .left .btn_exit {
+  list-style: none;
+}
+.contenedor_detail .items nav .left .btn_exit i {
+  color: white;
+  font-size: 20px;
+}
+.contenedor_detail .items nav .right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+.contenedor_detail .items nav .right i {
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+.contenedor_detail .items nav .right span {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.contenedor_detail .items .hashtags {
+  color: gray;
+  font-size: 13px;
+}
+.contenedor_detail .items .titulo_proyecto_detail {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contenedor_detail .items .descripcion_proyecto_detail {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(230, 230, 230);
+}
+.contenedor_detail .items .descripcion_proyecto_detail ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+  .contenedor_detail .items {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+  .contenedor_detail .imagenes {
+    width: 100%;
+    order: 1;
+  }
+}
